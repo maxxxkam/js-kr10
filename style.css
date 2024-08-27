@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: fantasy;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg?cs=srgb&dl=pexels-felixmittermeier-1205301.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
+    padding-top: 80px;
+}
+
+.wrapper {
+    backdrop-filter: blur (15px);
+    background-color: rgba(3, 3, 67, 0.597);
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.537);
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    input,
+    button {
+        padding: 8px;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+    }
+
+    p {
+        padding: 8px;
+        flex-direction: column;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+
+}
+
+.box {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 1px solid gray;
+    margin-top: 20px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: rgba(17, 1, 42, 0.829);
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgba(110, 3, 110, 0.694);
+    }
+    
+}
